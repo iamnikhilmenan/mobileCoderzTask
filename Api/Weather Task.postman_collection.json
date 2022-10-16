@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "327bda7e-ab9d-42b5-85d9-ee3f2e7613ce",
+		"name": "Weather Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20989766"
+	},
+	"item": [
+		{
+			"name": "Get Weather Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/onecall?lat=28.5355&lon=77.3910&units=metric&appid=your_weather_app_id&exclude=current,minutely,hourly,alerts",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"onecall"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "28.5355"
+						},
+						{
+							"key": "lon",
+							"value": "77.3910"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "your_weather_app_id"
+						},
+						{
+							"key": "exclude",
+							"value": "current,minutely,hourly,alerts"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Weather Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.openweathermap.org/data/2.5/onecall?lat=28.5355&lon=77.3910&units=metric&appid=your_weather_app_id&exclude=current,minutely,hourly,alerts",
+							"protocol": "https",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"onecall"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "28.5355"
+								},
+								{
+									"key": "lon",
+									"value": "77.3910"
+								},
+								{
+									"key": "units",
+									"value": "metric"
+								},
+								{
+									"key": "appid",
+									"value": "your_weather_app_id"
+								},
+								{
+									"key": "exclude",
+									"value": "current,minutely,hourly,alerts"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "openresty"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Jul 2022 06:20:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3997"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Cache-Key",
+							"value": "/data/2.5/onecall?exclude=current,minutely,hourly,alerts&lat=28.54&lon=77.39&units=metric"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"lat\": 28.5355,\n    \"lon\": 77.391,\n    \"timezone\": \"Asia/Kolkata\",\n    \"timezone_offset\": 19800,\n    \"daily\": [\n        {\n            \"dt\": 1658385000,\n            \"sunrise\": 1658361932,\n            \"sunset\": 1658411265,\n            \"moonrise\": 0,\n            \"moonset\": 1658389320,\n            \"moon_phase\": 0.77,\n            \"temp\": {\n                \"day\": 30.19,\n                \"min\": 27.52,\n                \"max\": 35.02,\n                \"night\": 31.85,\n                \"eve\": 34.69,\n                \"morn\": 27.52\n            },\n            \"feels_like\": {\n                \"day\": 31.5,\n                \"night\": 36.73,\n                \"eve\": 38.87,\n                \"morn\": 30.69\n            },\n            \"pressure\": 1003,\n            \"humidity\": 51,\n            \"dew_point\": 18.94,\n            \"wind_speed\": 4.57,\n            \"wind_deg\": 123,\n            \"wind_gust\": 6.09,\n            \"weather\": [\n                {\n                    \"id\": 500,\n                    \"main\": \"Rain\",\n                    \"description\": \"light rain\",\n                    \"icon\": \"10d\"\n                }\n            ],\n            \"clouds\": 95,\n            \"pop\": 0.88,\n            \"rain\": 3.03,\n            \"uvi\": 9.41\n        },\n        {\n            \"dt\": 1658471400,\n            \"sunrise\": 1658448365,\n            \"sunset\": 1658497638,\n            \"moonrise\": 1658430060,\n            \"moonset\": 1658479080,\n            \"moon_phase\": 0.8,\n            \"temp\": {\n                \"day\": 30.8,\n                \"min\": 28.62,\n                \"max\": 34.59,\n                \"night\": 29.33,\n                \"eve\": 34.59,\n                \"morn\": 28.79\n            },\n            \"feels_like\": {\n                \"day\": 35.68,\n                \"night\": 34.09,\n                \"eve\": 39.72,\n                \"morn\": 32.99\n            },\n            \"pressure\": 1003,\n            \"humidity\": 65,\n            \"dew_point\": 23.46,\n            \"wind_speed\": 2.95,\n            \"wind_deg\": 131,\n            \"wind_gust\": 4.46,\n            \"weather\": [\n                {\n                    \"id\": 501,\n                    \"main\": \"Rain\",\n                    \"description\": \"moderate rain\",\n                    \"icon\": \"10d\"\n                }\n            ],\n            \"clouds\": 100,\n            \"pop\": 1,\n            \"rain\": 12.85,\n            \"uvi\": 7.94\n        },\n        {\n            \"dt\": 1658557800,\n            \"sunrise\": 1658534798,\n            \"sunset\": 1658584010,\n            \"moonrise\": 1658518500,\n            \"moonset\": 1658568900,\n            \"moon_phase\": 0.83,\n            \"temp\": {\n                \"day\": 34.12,\n                \"min\": 28.33,\n                \"max\": 36.05,\n                \"night\": 28.33,\n                \"eve\": 33.14,\n                \"morn\": 28.43\n            },\n            \"feels_like\": {\n                \"day\": 39.01,\n                \"night\": 32.6,\n                \"eve\": 38.13,\n                \"morn\": 32.5\n            },\n            \"pressure\": 1002,\n            \"humidity\": 51,\n            \"dew_point\": 22.64,\n            \"wind_speed\": 6.11,\n            \"wind_deg\": 107,\n            \"wind_gust\": 9.28,\n            \"weather\": [\n                {\n                    \"id\": 500,\n                    \"main\": \"Rain\",\n                    \"description\": \"light rain\",\n                    \"icon\": \"10d\"\n                }\n            ],\n            \"clouds\": 89,\n            \"pop\": 0.95,\n            \"rain\": 3.43,\n            \"uvi\": 10.86\n        },\n        {\n            \"dt\": 1658644200,\n            \"sunrise\": 1658621232,\n            \"sunset\": 1658670380,\n            \"moonrise\": 1658607180,\n            \"moonset\": 1658658660,\n            \"moon_phase\": 0.86,\n            \"temp\": {\n                \"day\": 33.84,\n                \"min\": 27.89,\n                \"max\": 34.36,\n                \"night\": 31.72,\n                \"eve\": 34.36,\n                \"morn\": 27.89\n            },\n            \"feels_like\": {\n                \"day\": 39.07,\n                \"night\": 35.59,\n                \"eve\": 38.84,\n                \"morn\": 31.97\n            },\n            \"pressure\": 1001,\n            \"humidity\": 53,\n            \"dew_point\": 23.04,\n            \"wind_speed\": 6.47,\n            \"wind_deg\": 117,\n            \"wind_gust\": 9.75,\n            \"weather\": [\n                {\n                    \"id\": 501,\n                    \"main\": \"Rain\",\n                    \"description\": \"moderate rain\",\n                    \"icon\": \"10d\"\n                }\n            ],\n            \"clouds\": 97,\n            \"pop\": 0.85,\n            \"rain\": 4.51,\n            \"uvi\": 8.9\n        },\n        {\n            \"dt\": 1658730600,\n            \"sunrise\": 1658707666,\n            \"sunset\": 1658756750,\n            \"moonrise\": 1658696040,\n            \"moonset\": 1658748300,\n            \"moon_phase\": 0.89,\n            \"temp\": {\n                \"day\": 34.99,\n                \"min\": 28.06,\n                \"max\": 34.99,\n                \"night\": 30.81,\n                \"eve\": 33.63,\n                \"morn\": 28.06\n            },\n            \"feels_like\": {\n                \"day\": 40.27,\n                \"night\": 34.94,\n                \"eve\": 37.92,\n                \"morn\": 31.64\n            },\n            \"pressure\": 1003,\n            \"humidity\": 49,\n            \"dew_point\": 22.84,\n            \"wind_speed\": 5.65,\n            \"wind_deg\": 122,\n            \"wind_gust\": 9.52,\n            \"weather\": [\n                {\n                    \"id\": 501,\n                    \"main\": \"Rain\",\n                    \"description\": \"moderate rain\",\n                    \"icon\": \"10d\"\n                }\n            ],\n            \"clouds\": 60,\n            \"pop\": 0.86,\n            \"rain\": 4.56,\n            \"uvi\": 10.32\n        },\n        {\n            \"dt\": 1658817000,\n            \"sunrise\": 1658794099,\n            \"sunset\": 1658843118,\n            \"moonrise\": 1658785260,\n            \"moonset\": 1658837880,\n            \"moon_phase\": 0.92,\n            \"temp\": {\n                \"day\": 35.19,\n                \"min\": 28.87,\n                \"max\": 35.71,\n                \"night\": 32.73,\n                \"eve\": 35.71,\n                \"morn\": 28.87\n            },\n            \"feels_like\": {\n                \"day\": 39.96,\n                \"night\": 36.6,\n                \"eve\": 39.26,\n                \"morn\": 32.63\n            },\n            \"pressure\": 1005,\n            \"humidity\": 47,\n            \"dew_point\": 22.25,\n            \"wind_speed\": 5.3,\n            \"wind_deg\": 105,\n            \"wind_gust\": 9.14,\n            \"weather\": [\n                {\n                    \"id\": 500,\n                    \"main\": \"Rain\",\n                    \"description\": \"light rain\",\n                    \"icon\": \"10d\"\n                }\n            ],\n            \"clouds\": 78,\n            \"pop\": 0.34,\n            \"rain\": 0.84,\n            \"uvi\": 11\n        },\n        {\n            \"dt\": 1658903400,\n            \"sunrise\": 1658880534,\n            \"sunset\": 1658929485,\n            \"moonrise\": 1658874720,\n            \"moonset\": 1658927160,\n            \"moon_phase\": 0.96,\n            \"temp\": {\n                \"day\": 35.49,\n                \"min\": 30.48,\n                \"max\": 35.49,\n                \"night\": 30.48,\n                \"eve\": 34.7,\n                \"morn\": 31.44\n            },\n            \"feels_like\": {\n                \"day\": 40.64,\n                \"night\": 36.24,\n                \"eve\": 39.6,\n                \"morn\": 35.27\n            },\n            \"pressure\": 1004,\n            \"humidity\": 47,\n            \"dew_point\": 22.39,\n            \"wind_speed\": 3.58,\n            \"wind_deg\": 99,\n            \"wind_gust\": 5.48,\n            \"weather\": [\n                {\n                    \"id\": 500,\n                    \"main\": \"Rain\",\n                    \"description\": \"light rain\",\n                    \"icon\": \"10d\"\n                }\n            ],\n            \"clouds\": 99,\n            \"pop\": 0.56,\n            \"rain\": 3.45,\n            \"uvi\": 11\n        },\n        {\n            \"dt\": 1658989800,\n            \"sunrise\": 1658966968,\n            \"sunset\": 1659015850,\n            \"moonrise\": 1658964360,\n            \"moonset\": 1659016200,\n            \"moon_phase\": 0,\n            \"temp\": {\n                \"day\": 30.01,\n                \"min\": 28.04,\n                \"max\": 32.52,\n                \"night\": 28.04,\n                \"eve\": 30.21,\n                \"morn\": 29.23\n            },\n            \"feels_like\": {\n                \"day\": 35.56,\n                \"night\": 31.74,\n                \"eve\": 35.06,\n                \"morn\": 34.06\n            },\n            \"pressure\": 1004,\n            \"humidity\": 72,\n            \"dew_point\": 24.45,\n            \"wind_speed\": 5.31,\n            \"wind_deg\": 194,\n            \"wind_gust\": 6.46,\n            \"weather\": [\n                {\n                    \"id\": 501,\n                    \"main\": \"Rain\",\n                    \"description\": \"moderate rain\",\n                    \"icon\": \"10d\"\n                }\n            ],\n            \"clouds\": 86,\n            \"pop\": 1,\n            \"rain\": 8.47,\n            \"uvi\": 11\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Cities List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://52.73.146.184:3000/api/app/user/get-city-list?page=1&search=delhi",
+					"protocol": "http",
+					"host": [
+						"52",
+						"73",
+						"146",
+						"184"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"app",
+						"user",
+						"get-city-list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "search",
+							"value": "delhi"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Cities List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.73.146.184:3000/api/app/user/get-city-list?page=1&search=delhi",
+							"protocol": "http",
+							"host": [
+								"52",
+								"73",
+								"146",
+								"184"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"app",
+								"user",
+								"get-city-list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "search",
+									"value": "delhi"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1355"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"54b-5DdGzmG2zUQ8GkYo/PbGOz4MKWo\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Jul 2022 06:23:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"City Listing\",\n    \"data\": {\n        \"Record\": [\n            {\n                \"_id\": \"625404e5e80ce7b3d59473ea\",\n                \"id\": 1273294,\n                \"name\": \"Delhi\",\n                \"state\": \"\",\n                \"country\": \"IN\",\n                \"coord\": {\n                    \"lon\": 77.216667,\n                    \"lat\": 28.666668\n                }\n            },\n            {\n                \"_id\": \"62540501e80ce7b3d5963a5b\",\n                \"id\": 4321929,\n                \"name\": \"Delhi\",\n                \"state\": \"LA\",\n                \"country\": \"US\",\n                \"coord\": {\n                    \"lon\": -91.493172,\n                    \"lat\": 32.457642\n                }\n            },\n            {\n                \"_id\": \"62540503e80ce7b3d596603b\",\n                \"id\": 5114824,\n                \"name\": \"Delhi\",\n                \"state\": \"NY\",\n                \"country\": \"US\",\n                \"coord\": {\n                    \"lon\": -74.915993,\n                    \"lat\": 42.278141\n                }\n            },\n            {\n                \"_id\": \"62540504e80ce7b3d5966d73\",\n                \"id\": 5342522,\n                \"name\": \"Delhi\",\n                \"state\": \"CA\",\n                \"country\": \"US\",\n                \"coord\": {\n                    \"lon\": -120.778542,\n                    \"lat\": 37.432159\n                }\n            },\n            {\n                \"_id\": \"62540505e80ce7b3d5967e32\",\n                \"id\": 5937522,\n                \"name\": \"Delhi\",\n                \"state\": \"\",\n                \"country\": \"CA\",\n                \"coord\": {\n                    \"lon\": -80.49968,\n                    \"lat\": 42.850101\n                }\n            },\n            {\n                \"_id\": \"625404e5e80ce7b3d59473e8\",\n                \"id\": 1273292,\n                \"name\": \"Delhi Cantonment\",\n                \"state\": \"\",\n                \"country\": \"IN\",\n                \"coord\": {\n                    \"lon\": 77.133331,\n                    \"lat\": 28.6\n                }\n            },\n            {\n                \"_id\": \"62540500e80ce7b3d5962e38\",\n                \"id\": 4050006,\n                \"name\": \"Delhi Hills\",\n                \"state\": \"OH\",\n                \"country\": \"US\",\n                \"coord\": {\n                    \"lon\": -84.612717,\n                    \"lat\": 39.092838\n                }\n            },\n            {\n                \"_id\": \"625404e5e80ce7b3d59473e9\",\n                \"id\": 1273293,\n                \"name\": \"National Capital Territory of Delhi\",\n                \"state\": \"\",\n                \"country\": \"IN\",\n                \"coord\": {\n                    \"lon\": 77.25,\n                    \"lat\": 28.75\n                }\n            },\n            {\n                \"_id\": \"625404e4e80ce7b3d5946dfa\",\n                \"id\": 1261481,\n                \"name\": \"New Delhi\",\n                \"state\": \"\",\n                \"country\": \"IN\",\n                \"coord\": {\n                    \"lon\": 77.23114,\n                    \"lat\": 28.61282\n                }\n            }\n        ],\n        \"pageToken\": null,\n        \"totalPages\": 1,\n        \"currentPage\": 1,\n        \"previousPage\": null\n    }\n}"
+				}
+			]
+		}
+	]
+}
