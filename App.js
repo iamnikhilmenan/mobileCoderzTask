@@ -1,7 +1,5 @@
-import { StackNavigation } from './navigation/StackNavigation';
+import { StackNavigation } from "./navigation/StackNavigation";
 
 export default function App() {
-  return (
-    <StackNavigation />
-  );
+  return <StackNavigation />;
 }
